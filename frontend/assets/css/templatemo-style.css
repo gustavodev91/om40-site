@@ -28,7 +28,7 @@ a:hover {
 p {
 	font-size: 14px;
 	line-height: 25px;
-	color: #7a7a7a;
+	color: #fff;
 	letter-spacing: 0.2px;
 }
 
@@ -118,7 +118,7 @@ section {
 
 .main-banner .banner-content .banner-caption {
     max-width: 450px;
-	background-color: rgba(250,250,250,0.95);
+	background-color: rgba(47, 26, 26, 0.95);
 	margin: 50px;
 	padding: 50px;
 }
@@ -126,7 +126,7 @@ section {
 .main-banner .banner-content .banner-caption h4 {
 	font-size: 38px;
 	font-weight: 700;
-	color: #31323a;
+	color: #fff;
 	letter-spacing: 0.25px;
 	margin: 0px;
 }
@@ -168,65 +168,76 @@ section {
 
 .services .service-item {
 	margin-bottom: 3px;
-	background-color: #eaebef;
+	background-color: #fff;
 	padding: 35px;
 	text-align: center;
 	transition: all 0.5s;
 }
 
 .services .service-item .icon {
-	width: 50px;
-	height: 50px;
+	width: 70px;
+	height: 40px;
 	display: inline-block;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	transition: all 0.5s;
 }
 
+.bordas-icons {
+    padding: 1px 3px 0px 0px;
+}
+
 .services .first-item .icon {
-	background-image: url(../images/parcerias/brain.png);
+	background-image: url(../images/parceiros/brain.png);
 }
 .services .first-item:hover .icon {
-	background-image: url(../images/parcerias/brain.png);
+	background-image: url(../images/parceiros/brain.png);
 }
 
 .services .second-item .icon {
-	background-image: url(../images/parcerias/brf.png)
+	background-image: url(../images/parceiros/brf.png)
 }
 .services .second-item:hover .icon {
-	background-image: url(../images/parcerias/brf.png)
+	background-image: url(../images/parceiros/brf.png)
 }
 
 .services .third-item .icon {
-	background-image: url(../images/parcerias/senai.png)
+	background-image: url(../images/parceiros/eurobras.png)
 }
 .services .third-item:hover .icon {
-	background-image: url(../images/parcerias/senai.png)
+	background-image: url(../images/parceiros/eurobras.png)
 }
 
 .services .fourth-item .icon {
-	background-image: url(../images/parcerias/startadora.png)
+	background-image: url(../images/parceiros/marileusa.svg)
 }
 .services .fourth-item:hover .icon {
-	background-image: url(../images/parcerias/startadora.png)
+	background-image: url(../images/parceiros/marileusa.svg)
 }
 
 .services .fivth-item .icon {
-	background-image: url(../images/parcerias/ufu.jpeg)
+	background-image: url(../images/parceiros/vli.png)
 }
 .services .fivth-item:hover .icon {
-	background-image: url(../images/parcerias/ufu.jpeg)
+	background-image: url(../images/parceiros/vli.png)
 }
 
 .services .sixth-item .icon {
-	background-image: url(../images/parcerias/senai.png)
+	background-image: url(../images/parceiros/cargil.png)
 }
 .services .sixth-item:hover .icon {
-	background-image: url(../images/parcerias/senai.png)
+	background-image: url(../images/parceiros/cargil.png)
+}
+
+.services .sevth-item .icon {
+	background-image: url(../images/parceiros/sebrae.png)
+}
+.services .sevth-item:hover .icon {
+	background-image: url(../images/parceiros/sebrae.png)
 }
 
 .services .service-item:hover {
-	background-color: #535ba0;
+	background-color: #24252d;
 }
 .services .service-item:hover h4,
 .services .service-item:hover p {
@@ -1202,7 +1213,7 @@ section.buttons .container-fluid {
     display: -ms-flex;
     display: flex;
     position: relative;
-    background-color: #535ba0;
+    background-color: #32333c;
     margin: -100px -100px 100px -100px;
 }
 
