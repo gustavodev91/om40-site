@@ -226,23 +226,6 @@ https://templatemo.com/tm-529-ramayana
                 <li><a href="#parceiros">Parceiros</a></li>
                 <li><a href="#localizacao">Localização</a></li>
                 <li><a href="#contato">Contato</a></li>
-                <!-- <li>
-                  <span class="opener">Dropdown One</span>
-                  <ul>
-                    <li><a href="#">First Sub Menu</a></li>
-                    <li><a href="#">Second Sub Menu</a></li>
-                    <li><a href="#">Third Sub Menu</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <span class="opener">Dropdown Two</span>
-                  <ul>
-                    <li><a href="#">Sub Menu #1</a></li>
-                    <li><a href="#">Sub Menu #2</a></li>
-                    <li><a href="#">Sub Menu #3</a></li>
-                  </ul>
-                </li>
-                <li><a href="https://www.google.com">External Link</a></li> -->
               </ul>
             </nav>
 
@@ -257,26 +240,14 @@ https://templatemo.com/tm-529-ramayana
                     <img src="frontend/assets/images/carrosel/foto5.jpg" alt="featured one">
                     <p>Palestra Gabriel, diretor executivo da Acate - dia 08/04/2020</p>
                   </div>
-                </a>
-                <!-- <a href="#">
-                  <div class="featured-item">
-                    <img src="frontend/assets/images/featured_post_01.jpg" alt="featured two">
-                    <p>Donec a scelerisque massa. Aliquam non iaculis quam. Duis arcu turpis.</p>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="featured-item">
-                    <img src="frontend/assets/images/featured_post_01.jpg" alt="featured three">
-                    <p>Suspendisse ac convallis urna, vitae luctus ante. Donec sit amet.</p>
-                  </div>
-                </a> -->
+                </a>              
+
               </div>
             </div>
 
             <!-- Footer -->
             <footer id="footer">
-              <p class="copyright">Copyright &copy; 202O  Open Maker 4.0
-              <!-- <br>Designed by <a rel="nofollow" href="https://www.facebook.com/templatemo">Template Mo</a> -->
+              <p class="copyright">Copyright &copy; 202O  Open Maker 4.0              
             </p>
             </footer>
 
@@ -295,9 +266,5 @@ https://templatemo.com/tm-529-ramayana
     <script src="frontend/assets/js/transition.js"></script>
     <script src="frontend/assets/js/owl-carousel.js"></script>
     <script src="frontend/assets/js/custom.js"></script>
-</body>
-
-
   </body>
-
 </html>
