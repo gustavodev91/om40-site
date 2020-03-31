@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
     <title>OpenMaker 4.0</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="frontend/assets/images/favicon/favicon.ico">
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="frontend/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!--
 Ramayana CSS Template
@@ -20,9 +20,9 @@ https://templatemo.com/tm-529-ramayana
 -->
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-style.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="frontend/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="frontend/assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="frontend/assets/css/owl.css">
 
   </head>
 
@@ -39,7 +39,7 @@ https://templatemo.com/tm-529-ramayana
             <header id="header">
               <div class="logo">
                 <a href="index.html">
-                  <img src="assets/images/LOGO_2.png" 
+                  <img src="frontend/assets/images/LOGO_2.png" 
                   style="width:82px; height:86px"
                   alt="">                  
                 </a>
@@ -254,19 +254,19 @@ https://templatemo.com/tm-529-ramayana
               <div class="owl-carousel owl-theme">
                 <a href="#">
                   <div class="featured-item">
-                    <img src="assets/images/carrosel/foto5.jpg" alt="featured one">
+                    <img src="frontend/assets/images/carrosel/foto5.jpg" alt="featured one">
                     <p>Palestra Gabriel, diretor executivo da Acate - dia 08/04/2020</p>
                   </div>
                 </a>
                 <!-- <a href="#">
                   <div class="featured-item">
-                    <img src="assets/images/featured_post_01.jpg" alt="featured two">
+                    <img src="frontend/assets/images/featured_post_01.jpg" alt="featured two">
                     <p>Donec a scelerisque massa. Aliquam non iaculis quam. Duis arcu turpis.</p>
                   </div>
                 </a>
                 <a href="#">
                   <div class="featured-item">
-                    <img src="assets/images/featured_post_01.jpg" alt="featured three">
+                    <img src="frontend/assets/images/featured_post_01.jpg" alt="featured three">
                     <p>Suspendisse ac convallis urna, vitae luctus ante. Donec sit amet.</p>
                   </div>
                 </a> -->
@@ -287,14 +287,14 @@ https://templatemo.com/tm-529-ramayana
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend/vendor/jquery/jquery.min.js"></script>
+    <script src="frontend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/transition.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="frontend/assets/js/browser.min.js"></script>
+    <script src="frontend/assets/js/breakpoints.min.js"></script>
+    <script src="frontend/assets/js/transition.js"></script>
+    <script src="frontend/assets/js/owl-carousel.js"></script>
+    <script src="frontend/assets/js/custom.js"></script>
 </body>
 
 

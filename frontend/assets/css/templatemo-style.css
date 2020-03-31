@@ -236,6 +236,21 @@ section {
 	background-image: url(../images/parceiros/sebrae.png)
 }
 
+.services .eighth-item .icon {
+	background-image: url(../images/parceiros/ufu.png)
+}
+.services .eighth-item:hover .icon {
+	background-image: url(../images/parceiros/ufu.png)
+}
+
+.services .nineth-item .icon {
+	background-image: url(../images/parceiros/startadora.png)
+}
+.services .nineth-item:hover .icon {
+	background-image: url(../images/parceiros/startadora.png)
+}
+
+
 .services .service-item:hover {
 	background-color: #24252d;
 }
