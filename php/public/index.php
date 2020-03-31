@@ -1,9 +1,29 @@
 <?php
 
-require "../vendor/autoload.php";
-require("../app/src/Mail.php");
-// use app\src\Mail;
+require "php/vendor/autoload.php";
+require "php/app/src/Mail.php";
 
-$email = new Mail();
 
-$email->send();
+function sendMsg($nome, $emailEnviado, $tel, $mensagem){
+
+    $email = new Mail();
+
+    $msg = buildMessage($nome, $emailEnviado, $tel, $mensagem);
+    
+    return $email->send($nome, $emailEnviado, $tel, $msg);
+
+}
+
+function buildMessage($nome, $emailEnviado, $tel, $mensagem){
+    
+    $cabecalho = '<b>Nome:</b> '.$nome;
+    $cabecalho .= '<br><b>Email: </b>'.$emailEnviado;
+    $cabecalho .= '<br><b>Telefone: </b>'.$tel;
+
+    $cabecalho .= '<br><br><br>';
+
+    return $cabecalho.$mensagem;
+}
+
+
+

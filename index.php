@@ -1,3 +1,3 @@
 <?php
 
-include('frontend/mainPage.php');
+include('frontend/index.php');

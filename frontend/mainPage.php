@@ -14,10 +14,7 @@
     <!-- Bootstrap core CSS -->
     <link href="frontend/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<!--
-Ramayana CSS Template
-https://templatemo.com/tm-529-ramayana
--->
+
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="frontend/assets/css/fontawesome.css">
@@ -170,11 +167,11 @@ https://templatemo.com/tm-529-ramayana
                 <h4>Contato: </h4>
                 <div class="row">
                   <div class="col-md-6">
-                    <form id="contact" action="" method="post">
+                    <form id="contact"  method="post">
                       <div class="row">
                         <div class="col-md-12">
                           <fieldset>
-                            <input name="name" type="text" class="form-control" id="name" placeholder="Nome" required="">
+                            <input name="nome" type="text" class="form-control" id="name" placeholder="Nome" required="">
                           </fieldset>
                         </div>
                         <div class="col-md-12">
@@ -184,19 +181,23 @@ https://templatemo.com/tm-529-ramayana
                         </div>
                         <div class="col-md-12">
                           <fieldset>
-                            <input name="name" type="tel" class="form-control" id="name" placeholder="Telefone" required>
+                            <input name="tel" type="tel" class="form-control" id="name" placeholder="Telefone" required>
                           </fieldset>
                         </div>
                         <div class="col-md-12">
                           <fieldset>
-                            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Menssagem" required=""></textarea>
+                            <textarea name="mensagem" rows="6" class="form-control" id="message" placeholder="Menssagem" required=""></textarea>
                           </fieldset>
-                        </div>
+                        </div>                        
+                        
+                        <? $msgForm; ?>
+
                         <div class="col-md-12">
                           <fieldset>
-                            <button type="submit" id="form-submit" class="button">Enviar Menssagem</button>
+                            <button type="submit" id="form-submit" class="button" name="BTEnvia" value="Enviar">Enviar Menssagem</button>
                           </fieldset>
                         </div>
+                        
                       </div>
                     </form> 
                   </div>                  
