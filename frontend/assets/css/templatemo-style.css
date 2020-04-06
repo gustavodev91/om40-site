@@ -257,6 +257,13 @@ section {
 	background-image: url(../images/parceiros/algartelecom.png)
 }
 
+.services .eleventh-item .icon {
+	background-image: url(../images/parceiros/weme.png)
+}
+.services .eleventh-item:hover .icon {
+	background-image: url(../images/parceiros/weme.png)
+}
+
 
 .services .service-item:hover {
 	background-color: #24252d;
