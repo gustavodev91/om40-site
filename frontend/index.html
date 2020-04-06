@@ -10,19 +10,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
     <title>OpenMaker 4.0</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="frontend/assets/images/favicon/favicon.ico">
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="frontend/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<!--
-Ramayana CSS Template
-https://templatemo.com/tm-529-ramayana
--->
+
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-style.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="frontend/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="frontend/assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="frontend/assets/css/owl.css">
 
   </head>
 
@@ -39,7 +36,7 @@ https://templatemo.com/tm-529-ramayana
             <header id="header">
               <div class="logo">
                 <a href="index.html">
-                  <img src="assets/images/LOGO_2.png" 
+                  <img src="frontend/assets/images/LOGO_2.png" 
                   style="width:82px; height:86px"
                   alt="">                  
                 </a>
@@ -47,7 +44,7 @@ https://templatemo.com/tm-529-ramayana
             </header>
 
             <!-- Banner -->
-            <section class="main-banner">
+            <section id="sobre" class="main-banner">
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-md-12">
@@ -89,17 +86,7 @@ https://templatemo.com/tm-529-ramayana
                     <div class="service-item second-item">
                       <div class="icon"></div>                     
                     </div>
-                  </div>
-                  <div class="col-md-3 bordas-icons">
-                    <div class="service-item third-item">
-                      <div class="icon" style="width: 121px;"></div>                     
-                    </div>
-                  </div>
-                  <div class="col-md-3 bordas-icons">
-                    <div class="service-item fourth-item">
-                      <div class="icon" style="width: 121px;"></div>                      
-                    </div>
-                  </div>
+                  </div>                                    
                   <div class="col-md-3 bordas-icons">
                     <div class="service-item fivth-item">
                       <div class="icon"></div>                      
@@ -130,7 +117,17 @@ https://templatemo.com/tm-529-ramayana
                     <div class="service-item nineth-item">
                       <div class="icon" style="margin-top: 12px;height: 28px;width: 85px;"></div>                     
                     </div>
-                  </div>                  
+                  </div>
+                  <div class="col-md-3 bordas-icons">
+                    <div class="service-item fourth-item">
+                      <div class="icon" style="width: 121px;"></div>                      
+                    </div>
+                  </div>     
+                  <div class="col-md-3 bordas-icons">
+                    <div class="service-item tenth-item">
+                      <div class="icon" style="width: 121px;"></div>                     
+                    </div>
+                  </div>             
                 </div>
               </div>
             </section>
@@ -170,11 +167,11 @@ https://templatemo.com/tm-529-ramayana
                 <h4>Contato: </h4>
                 <div class="row">
                   <div class="col-md-6">
-                    <form id="contact" action="" method="post">
+                    <form id="contact"  method="post">
                       <div class="row">
                         <div class="col-md-12">
                           <fieldset>
-                            <input name="name" type="text" class="form-control" id="name" placeholder="Nome" required="">
+                            <input name="nome" type="text" class="form-control" id="name" placeholder="Nome" required="">
                           </fieldset>
                         </div>
                         <div class="col-md-12">
@@ -184,19 +181,21 @@ https://templatemo.com/tm-529-ramayana
                         </div>
                         <div class="col-md-12">
                           <fieldset>
-                            <input name="name" type="tel" class="form-control" id="name" placeholder="Telefone" required>
+                            <input name="tel" type="tel" class="form-control" id="name" placeholder="Telefone" required>
                           </fieldset>
                         </div>
                         <div class="col-md-12">
                           <fieldset>
-                            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Menssagem" required=""></textarea>
+                            <textarea name="mensagem" rows="6" class="form-control" id="message" placeholder="Menssagem" required=""></textarea>
                           </fieldset>
-                        </div>
+                        </div>                        
+
                         <div class="col-md-12">
                           <fieldset>
-                            <button type="submit" id="form-submit" class="button">Enviar Menssagem</button>
+                            <button type="submit" id="form-submit" class="button" name="BTEnvia" value="Enviar">Enviar Menssagem</button>
                           </fieldset>
                         </div>
+                        
                       </div>
                     </form> 
                   </div>                  
@@ -222,27 +221,10 @@ https://templatemo.com/tm-529-ramayana
             <!-- Menu -->
             <nav id="menu">
               <ul>
-                <li><a href="index.html">Sobre</a></li>
+                <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#parceiros">Parceiros</a></li>
                 <li><a href="#localizacao">Localização</a></li>
                 <li><a href="#contato">Contato</a></li>
-                <!-- <li>
-                  <span class="opener">Dropdown One</span>
-                  <ul>
-                    <li><a href="#">First Sub Menu</a></li>
-                    <li><a href="#">Second Sub Menu</a></li>
-                    <li><a href="#">Third Sub Menu</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <span class="opener">Dropdown Two</span>
-                  <ul>
-                    <li><a href="#">Sub Menu #1</a></li>
-                    <li><a href="#">Sub Menu #2</a></li>
-                    <li><a href="#">Sub Menu #3</a></li>
-                  </ul>
-                </li>
-                <li><a href="https://www.google.com">External Link</a></li> -->
               </ul>
             </nav>
 
@@ -254,29 +236,17 @@ https://templatemo.com/tm-529-ramayana
               <div class="owl-carousel owl-theme">
                 <a href="#">
                   <div class="featured-item">
-                    <img src="assets/images/carrosel/foto5.jpg" alt="featured one">
+                    <img src="frontend/assets/images/carrosel/foto5.jpg" alt="featured one">
                     <p>Palestra Gabriel, diretor executivo da Acate - dia 08/04/2020</p>
                   </div>
-                </a>
-                <!-- <a href="#">
-                  <div class="featured-item">
-                    <img src="assets/images/featured_post_01.jpg" alt="featured two">
-                    <p>Donec a scelerisque massa. Aliquam non iaculis quam. Duis arcu turpis.</p>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="featured-item">
-                    <img src="assets/images/featured_post_01.jpg" alt="featured three">
-                    <p>Suspendisse ac convallis urna, vitae luctus ante. Donec sit amet.</p>
-                  </div>
-                </a> -->
+                </a>              
+
               </div>
             </div>
 
             <!-- Footer -->
             <footer id="footer">
-              <p class="copyright">Copyright &copy; 202O  Open Maker 4.0
-              <!-- <br>Designed by <a rel="nofollow" href="https://www.facebook.com/templatemo">Template Mo</a> -->
+              <p class="copyright">Copyright &copy; 202O  Open Maker 4.0              
             </p>
             </footer>
 
@@ -287,17 +257,13 @@ https://templatemo.com/tm-529-ramayana
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend/vendor/jquery/jquery.min.js"></script>
+    <script src="frontend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/transition.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/custom.js"></script>
-</body>
-
-
+    <script src="frontend/assets/js/browser.min.js"></script>
+    <script src="frontend/assets/js/breakpoints.min.js"></script>
+    <script src="frontend/assets/js/transition.js"></script>
+    <script src="frontend/assets/js/owl-carousel.js"></script>
+    <script src="frontend/assets/js/custom.js"></script>
   </body>
-
 </html>

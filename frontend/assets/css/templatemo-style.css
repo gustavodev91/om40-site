@@ -250,6 +250,13 @@ section {
 	background-image: url(../images/parceiros/startadora.png)
 }
 
+.services .tenth-item .icon {
+	background-image: url(../images/parceiros/algartelecom.png)
+}
+.services .tenth-item:hover .icon {
+	background-image: url(../images/parceiros/algartelecom.png)
+}
+
 
 .services .service-item:hover {
 	background-color: #24252d;

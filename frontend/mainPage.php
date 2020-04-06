@@ -86,17 +86,7 @@
                     <div class="service-item second-item">
                       <div class="icon"></div>                     
                     </div>
-                  </div>
-                  <div class="col-md-3 bordas-icons">
-                    <div class="service-item third-item">
-                      <div class="icon" style="width: 121px;"></div>                     
-                    </div>
-                  </div>
-                  <div class="col-md-3 bordas-icons">
-                    <div class="service-item fourth-item">
-                      <div class="icon" style="width: 121px;"></div>                      
-                    </div>
-                  </div>
+                  </div>                                    
                   <div class="col-md-3 bordas-icons">
                     <div class="service-item fivth-item">
                       <div class="icon"></div>                      
@@ -127,7 +117,17 @@
                     <div class="service-item nineth-item">
                       <div class="icon" style="margin-top: 12px;height: 28px;width: 85px;"></div>                     
                     </div>
-                  </div>                  
+                  </div>
+                  <div class="col-md-3 bordas-icons">
+                    <div class="service-item fourth-item">
+                      <div class="icon" style="width: 121px;"></div>                      
+                    </div>
+                  </div>     
+                  <div class="col-md-3 bordas-icons">
+                    <div class="service-item tenth-item">
+                      <div class="icon" style="width: 121px;"></div>                     
+                    </div>
+                  </div>             
                 </div>
               </div>
             </section>
@@ -190,8 +190,6 @@
                           </fieldset>
                         </div>                        
                         
-                        <? $msgForm; ?>
-
                         <div class="col-md-12">
                           <fieldset>
                             <button type="submit" id="form-submit" class="button" name="BTEnvia" value="Enviar">Enviar Menssagem</button>
