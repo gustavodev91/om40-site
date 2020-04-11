@@ -4,13 +4,13 @@ require "php/vendor/autoload.php";
 require "php/app/src/Mail.php";
 
 
-function sendMsg($nome, $emailEnviado, $tel, $mensagem){
+function sendMsg($nome, $emailEnviado, $tel, $mensagem, $arquivo){
 
     $email = new Mail();
-
+    
     $msg = buildMessage($nome, $emailEnviado, $tel, $mensagem);
     
-    return $email->send($nome, $emailEnviado, $tel, $msg);
+    return $email->send($nome, $emailEnviado, $tel, $msg,$arquivo);
 
 }
 

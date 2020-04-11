@@ -35,7 +35,7 @@
             <!-- Header -->
             <header id="header">
               <div class="logo">
-                <a href="index.html">
+                <a href="frontend/index.html">
                   <img src="frontend/assets/images/LOGO_2.png" 
                   style="width:82px; height:86px"
                   alt="">                  
@@ -179,23 +179,27 @@
                 <h4>Contato: </h4>
                 <div class="row">
                   <div class="col-md-6">
-                    <form id="contact"  method="post">
+                    <form id="contact" method="post" enctype="multipart/form-data">
                       <div class="row">
+
                         <div class="col-md-12">
                           <fieldset>
                             <input name="nome" type="text" class="form-control" id="name" placeholder="Nome" required="">
                           </fieldset>
                         </div>
+
                         <div class="col-md-12">
                           <fieldset>
                             <input name="email" type="email" class="form-control" id="email" placeholder="Email" required="dsda">
                           </fieldset>
                         </div>
+
                         <div class="col-md-12">
                           <fieldset>
                             <input name="tel" type="tel" class="form-control" id="name" placeholder="Telefone" required>
                           </fieldset>
                         </div>
+
                         <div class="col-md-12">
                           <fieldset>
                             <textarea name="mensagem" rows="6" class="form-control" id="message" placeholder="Menssagem" required=""></textarea>
@@ -203,11 +207,20 @@
                         </div>                        
 
                         <div class="col-md-12">
+                          <fieldset style="padding-bottom: 25px;">
+                            <div class="custom-file">
+                              <input name="file" type="file" class="custom-file-input" id="file">
+                              <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>                            
+                          </fieldset>
+                        </div>
+
+                        <div class="col-md-12">
                           <fieldset>
                             <button type="submit" id="form-submit" class="button" name="BTEnvia" value="Enviar">Enviar Menssagem</button>
                           </fieldset>
                         </div>
-                        
+
                       </div>
                     </form> 
                   </div>                  
@@ -277,5 +290,6 @@
     <script src="frontend/assets/js/transition.js"></script>
     <script src="frontend/assets/js/owl-carousel.js"></script>
     <script src="frontend/assets/js/custom.js"></script>
+    <script src="frontend/assets/js/app.js"></script>
   </body>
 </html>
