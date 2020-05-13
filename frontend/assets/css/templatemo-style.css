@@ -264,6 +264,13 @@ section {
 	background-image: url(../images/parceiros/weme.png)
 }
 
+.services .twelveth-item .icon {
+	background-image: url(../images/parceiros/uberhub.png)
+}
+.services .twelveth-item:hover .icon {
+	background-image: url(../images/parceiros/uberhub.png)
+}
+
 
 .services .service-item:hover {
 	background-color: #f1f1f1;
