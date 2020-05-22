@@ -169,14 +169,14 @@ section {
 .services .service-item {
 	margin-bottom: 3px;
 	background-color: #fff;
-	padding: 35px;
+	padding-top: 20px;
 	text-align: center;
 	transition: all 0.5s;
 }
 
 .services .service-item .icon {
-	width: 70px;
-	height: 40px;
+	width: 55%;
+	height: 78px;
 	display: inline-block;
 	background-size: contain;
 	background-repeat: no-repeat;
