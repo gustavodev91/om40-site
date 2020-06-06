@@ -17,6 +17,8 @@
 	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
 	<link href="css/flexslider.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/gallery-1.css" rel="stylesheet">
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -27,34 +29,6 @@
 
 <body>
 	<div id="wrapper" class="home-page">
-		<header class="topbar">
-			<div class="container">
-				<div class="row">
-					<!-- social icon-->
-					<div class="col-sm-3">
-						<ul class="social-network">
-							<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>
-							<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>
-							<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>
-						</ul>
-					</div>
-					<div class="col-sm-9">
-						<div class="row">
-							<ul class="info">
-								<li><i class="icon-info-blocks">Email</i><span>openmaker4.0@gmail.com</span></li>
-								<li><i class="icon-info-blocks">Telefone</i><span>(34) 99152 3107 </span></li>
-							</ul>
-							<div class="clr"></div>
-						</div>
-					</div>
-					<!-- info -->
-
-				</div>
-			</div>
-		</header>
-
 		<!-- start header -->
 		<header>
 			<div class="navbar navbar-default navbar-static-top">
@@ -71,11 +45,10 @@
 					<div class="navbar-collapse collapse ">
 						<ul class="nav navbar-nav">
 							<li class="active"><a class="waves-effect waves-dark" href="#">Sobre</a></li>
-							<li><a class="waves-effect waves-dark" href="inciativas.html">Iniciativas</a></li>							
+							<li><a class="waves-effect waves-dark" href="#iniciativas">Iniciativas</a></li>
 							<li><a class="waves-effect waves-dark" href="#mantenedores">Mantenedores</a></li>
 							<li><a class="waves-effect waves-dark" href="#parceiros">Parceiros</a></li>
-							<li><a class="waves-effect waves-dark" href="#localizacao">Localização</a></li>
-							<li><a class="waves-effect waves-dark" href="contact.html">Contato</a></li>
+							<li><a class="waves-effect waves-dark" href="#contato">Contato</a></li>
 						</ul>
 					</div>
 				</div>
@@ -95,18 +68,12 @@
 
 						</div>
 					</li>
-					<li>
-						<img src="assets/images/carrosel/foto5.jpg" alt="" />
-						<div class="flex-caption">
-							<h3>Open Maker 4.0</h3>
-							<p>Frase resumo</p>
-						</div>
-					</li>
+
 				</ul>
 			</div>
 			<!-- end slider -->
 		</section>
-		
+
 		<section id="content">
 			<div class="container">
 
@@ -160,9 +127,51 @@
 			</div>
 		</section>
 
-		
+		<section class="dishes" id="iniciativas">
+			<div class="container">
+				<div class="row" style="margin-bottom: 0px;">
+					<div class="col-md-12">
+						<div class="aligncenter">
+							<h2 class="aligncenter">Iniciativas</h2>
+							<a href="iniciativas.html">Acompanhe todas iniciativas do OpenMaker</a>
+						</div>
+						<br />
+					</div>
+				</div>
+				<div class="row" style="margin-bottom: 0px;">
+					<div id="isotope-gallery-container">
+						<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+							<div class="gallery-item">
+								<div class="gallery-thumb">
+									<a href="iniciativa1.html">
+										<img src="img/works/1.jpg" class="img-responsive" alt="Iniciativa 1">
+										<div class="image-overlay"></div>
+										<a class="gallery-zoom"><i class="fa fa-eye"></i></a>
+									</a>
+								</div>
+								<div class="gallery-details">
+									<div class="editContent">
+										<h5>Iniciativa 1</h5>
+									</div>
+									<div class="editContent">
+										<p>Descrição Iniciativa 1.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.gallery-item-wrapper -->
+					</div>
+				</div>
+				<div class="row" style="text-align: center;">
+					<a href="iniciativas.html">
+						<button class="btn btn-primary">
+							Ver mais
+						</button>
+					</a>
+				</div>
+		</section>
 
-		<section class="dishes" id="mantenedores">
+		<section id="mantenedores">
 			<div class="container">
 				<div class="row" style="margin-bottom: 0px;">
 					<div class="col-md-12">
@@ -241,7 +250,7 @@
 			</div>
 		</section>
 
-		<section id="parceiros">
+		<section class="dishes" id="parceiros">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -331,45 +340,58 @@
 			</div>
 		</section>
 
-		<section class="dishes" id="localizacao">
+		<section id="contato">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="section-title">
-							<h4>Onde estamos</h4>
-							<div class="col-md-12">
-								<div>
-									Av. Floriano Peixoto, 5505 - Granja Marileusa, Uberlândia - MG
-								</div>
-								<div>
-									<a style="color: #fff;"
-										href="https://www.google.com/maps/place/IoT+Open+Maker/@-18.8802949,-48.2492293,19.42z/data=!4m8!1m2!2m1!1sopen+maker+4.0+uberlandia!3m4!1s0x0:0x6597e7a6b3f37fdd!8m2!3d-18.8800884!4d-48.2491693"
-										target="_blank"></a>
-									<button type="button" class="btn btn-primary">
-										Ir
-									</button>
-									</a>
-								</div>
+					<div class="col-md-6">
+						<p> </p>
+
+						<!-- Form itself -->
+						<form name="sentMessage" id="contactForm" novalidate>
+							<div class="input-field">
+								<input type="text" name="name" class="form-control" id="name" required
+									data-validation-required-message="Please enter your name" />
+								<label for="name" class=""> Nome </label>
+								<p class="help-block"></p>
 
 							</div>
+							<div class="input-field">
+								<input type="email" class="form-control" id="email" required
+									data-validation-required-message="Please enter your email" />
+								<label for="name" class=""> Email </label>
+							</div>
+							<div class="input-field">
+								<input type="email" class="form-control" id="email" required
+									data-validation-required-message="Please enter your email" />
+								<label for="name" class=""> Telefone </label>
+							</div>
 
-						</div>
+							<div class="input-field">
+								<textarea rows="5" cols="100" required class="form-control materialize-textarea"
+									idation-required-message="Please enter your message" minlength="5"
+									data-validation-minlength-message="Min 5 characters" maxlength="999"
+									style="resize:none"></textarea>
+								<label for="name" class=""> Mensagem </label>
+							</div>
+
+							<div class="input-field">
+								<fieldset style="padding-bottom: 25px;">
+									<div class="custom-file">
+										<input name="file" type="file" class="custom-file-input" id="file">
+										<label class="custom-file-label" for="customFile"></label>
+									</div>
+								</fieldset>
+							</div>
+							<div id="success"> </div> <!-- For success/fail messages -->
+							<button type="submit"
+								class="btn btn-primary waves-effect waves-dark pull-right">Enviar</button><br />
+						</form>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 col-sm-12">
-						<div id="map">
-							<!-- How to change your own map point
-									   1. Go to Google Maps
-									   2. Click on your location point
-									   3. Click "Share" and choose "Embed map" tab
-									   4. Copy only URL and paste it within the src="" field below
-								-->
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.1591617046697!2d-48.251091550034715!3d-18.880019011327743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44505fcf7dccf%3A0x1198bba59b363f35!2sOpenMaker4.0!5e0!3m2!1sen!2sbr!4v1589839116160!5m2!1sen!2sbr"
-								width="300" height="225" frameborder="0" style="border:0;" allowfullscreen=""
-								aria-hidden="false" tabindex="0"></iframe>
-						</div>
+					<div class="col-md-6">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.1591617046697!2d-48.251091550034715!3d-18.880019011327743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44505fcf7dccf%3A0x1198bba59b363f35!2sOpenMaker4.0!5e0!3m2!1sen!2sbr!4v1589839116160!5m2!1sen!2sbr"
+							width="500" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+							aria-hidden="false" tabindex="0"></iframe>
 					</div>
 				</div>
 			</div>
@@ -410,10 +432,10 @@
 						<div class="widget">
 							<h5 class="widgetheading">Útimos posts</h5>
 							<ul class="link-list">
-							<li><a class="waves-effect waves-dark" href="iniciativa1.html">
-								Iniciativa 1</a></li>
-							</ul> 							
-						
+								<li><a class="waves-effect waves-dark" href="iniciativa1.html">
+										Iniciativa 1</a></li>
+							</ul>
+
 						</div>
 					</div>
 					<div class="col-sm-3">
