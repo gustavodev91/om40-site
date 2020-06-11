@@ -142,9 +142,9 @@ jQuery(document).ready(function($) {
 		$container.isotope('reLayout');
 		});
 		// End Isotope Filtering
-		$('.gallery-zoom').magnificPopup({ 
-				type: 'image'
-				// other options
-			});
+		// $('.gallery-zoom').magnificPopup({ 
+		// 		type: 'image'
+		// 		// other options
+		// 	});
 			 
 });
