@@ -10,3 +10,13 @@ Informar sobre o projeto OpenMaker 4.0.
 
 
 
+
+
+
+Teela inicial
+- tirar titulo da foto
+- Tirar podcasts
+
+
+
+
