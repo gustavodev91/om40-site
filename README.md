@@ -17,4 +17,4 @@ Informar sobre o projeto OpenMaker 4.0.
 - alterar rede integração
 
 ----------------
-- "Conectar indústrias, academia, governo e ecossistemas de inovação com geração de valor através da indústria 4.0"
+- Conectar e gerar valor para indústrias, academia, governo e ecossistemas de inovação com foco na indústria 4.0
