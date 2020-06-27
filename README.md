@@ -11,7 +11,6 @@ Informar sobre o projeto OpenMaker 4.0.
 
 
 ---------Features 
-- Menu fixo
 - Banner com video
 
 ----------------

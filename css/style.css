@@ -245,7 +245,7 @@ header .navbar {
 }
 
 .home-page header .navbar-default {
-	background: #fff;
+	background: #000;
 	/* position: absolute; */
 	width: 100%;
 }
@@ -369,7 +369,7 @@ header ul.nav li ul li a {
 }
 
 .navbar .nav>li>a {
-	color: #676767;
+	color: #fff;
 	text-shadow: none;
 	border: 1px solid rgba(255, 255, 255, 0) !important;
 }
@@ -1390,11 +1390,15 @@ ul.team-detail li ul.social-network li i {
 }
 
 .navbar-brand i {
-	color: rgba(0,0,0,.5);
+	color: #fff;
 	font-size: 26px;
 	margin-right: 5px;
 	position: relative;
 	top: 3px;
+}
+
+.span-title{
+	color: #ababab;
 }
 
 .pricing-title {
