@@ -11,10 +11,8 @@ Informar sobre o projeto OpenMaker 4.0.
 
 
 ---------Features 
-- Criar iniciativa tied40
-- Menu fixo
-- Banner com video
-- alterar rede integração
+
+
 
 ----------------
 - Conectar e gerar valor para indústrias, academia, governo e ecossistemas de inovação com foco na indústria 4.0
