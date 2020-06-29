@@ -245,7 +245,7 @@ header .navbar {
 }
 
 .home-page header .navbar-default {
-	background: #fff;
+	background: #000;
 	/* position: absolute; */
 	width: 100%;
 }
@@ -1390,7 +1390,7 @@ ul.team-detail li ul.social-network li i {
 }
 
 .navbar-brand i {
-	color: rgba(0,0,0,.5);
+	color: #fff;
 	font-size: 26px;
 	margin-right: 5px;
 	position: relative;
