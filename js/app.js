@@ -1,15 +1,10 @@
 
 var _containerMenu = $('[data-container="menu"]');
 
-console.log(_containerMenu);
+var _divSuporte = $('[data-container="div-suporte"]');
 
-$(window).scroll(function(){
-  //if( $(this).scrollTop() > 73 ){
-    _containerMenu.addClass('menu-fixo');
-  //}else{
-    //_containerMenu.removeClass('menu-fixo');
-  //}
-})
+_divSuporte.css("height",_containerMenu.height());
+
 
 $(".custom-file-input").on("change", function() {
     var fileName = $(this).val().split("\\").pop();
