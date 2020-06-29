@@ -6,3 +6,13 @@
     width: 100%;
     transition: height 1s;
 } 
+
+.texto-primario{
+    text-align: center;
+    background-color: #fff;
+    text-transform: uppercase;
+    padding: 19px;
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: bold;
+}
