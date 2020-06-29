@@ -8,6 +8,7 @@
 	<meta name="description" content="" />
 	<meta name="author" content="http://webthemez.com" />
 	<!-- css -->
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
 	<link href="../css/bootstrap.min.css" rel="stylesheet" />
@@ -19,6 +20,8 @@
 	<!-- Block Styles -->
 	<link href="../css/style.css" rel="stylesheet" />
 	<link href="../css/gallery-1.css" rel="stylesheet">
+    <link href="../css/novos-estilos.css" rel="stylesheet">
+
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -32,7 +35,7 @@
 	
 
 		<!-- start header -->
-		<header>
+		<header data-container="menu"  class="menu-fixo">
 			<div class="navbar navbar-default navbar-static-top">
 				<div class="container">
 					<div class="navbar-header">
@@ -42,7 +45,11 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="../index.html"><i class="icon-info-blocks">Open</i>Maker</a>
+						<a class="navbar-brand" href="index.html">
+							<i class="icon-info-blocks">Open</i>
+							<span class="span-title">Maker</span>
+							
+						</a>
 					</div>
 					<div class="navbar-collapse collapse ">
 						<ul class="nav navbar-nav">
@@ -57,6 +64,7 @@
 				</div>
 			</div>
 		</header><!-- end header -->
+		<div data-container="div-suporte"></div>
 		<section id="inner-headline">
 			<div class="container">
 				<div class="row">
@@ -99,6 +107,28 @@
 				<div class="row">
 					<div id="isotope-gallery-container">
 						<div class="col-xs-12">
+							<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+								<div class="gallery-item">
+									<div class="gallery-thumb" style="background-color: #fff;text-align: -webkit-center;border: 4px solid #fff;">
+										<a href="tied40.html">
+											<img src="../assets/images/iniciativas/TIED4.0-BANNER.png" 
+											class="img-responsive" alt="Iniciativa 1" 
+											style="height: 233px;">
+											<div class="image-overlay"></div>
+											<a class="gallery-zoom" href="tied40.html"><i class="fa fa-eye"></i></a>
+										</a>
+									</div>
+									<div class="gallery-details">
+										<div class="editContent">
+											<h5>TIED 40</h5>
+										</div>
+										<div class="editContent">
+											<p>Resumo de texto TIED 40</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
 							<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
 								<div class="gallery-item">
 									<div class="gallery-thumb" style="background-color: #fff;text-align: -webkit-center;border: 4px solid #fff;">
@@ -244,6 +274,8 @@
 	<script src="../js/jquery.magnific-popup.min.js"></script>
 	<script src="../js/animate.js"></script>
 	<script src="../js/custom.js"></script>
+    <script src="../js/app.js"></script>
+
 
 </body>
 
