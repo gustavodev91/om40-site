@@ -11,6 +11,9 @@ Informar sobre o projeto OpenMaker 4.0.
 
 
 ---------Features 
+- corrigir o cabeçalho
+- nova inciativa
+
 - Banner com video
 
 ----------------
