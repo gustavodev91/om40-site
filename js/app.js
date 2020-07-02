@@ -1,10 +1,13 @@
 
 
 var _containerMenu = $('[data-container="menu"]');
-
 var _divSuporte = $('[data-container="div-suporte"]');
+var _textoCompleto = $('[data-container="texto-completo"]');
+var _iframeVideo = $('[data-container="iframe-video"]');
 
 _divSuporte.css("height",_containerMenu.height());
+
+_iframeVideo.css("margin-top",(_textoCompleto.height() - _iframeVideo.height())/2);
 
 
 $(".custom-file-input").on("change", function() {

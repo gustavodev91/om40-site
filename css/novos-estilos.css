@@ -11,10 +11,13 @@
     text-align: center;
     background-color: #fff;
     text-transform: uppercase;
-    padding: 19px;
-    font-size: 18px;
+    padding: 65px;
+    font-size: 32px;
     font-family: serif;
     font-weight: bold;
+    color: #000;
+    line-height: 40px;
+
 }
 
 .span-title{
