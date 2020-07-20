@@ -483,31 +483,39 @@
 						<p> </p>
 
 						<!-- Form itself -->
-						<form name="sentMessage" id="contactForm" novalidate>
+						<div name="sentMessage" id="contactForm" novalidate>
 							<div class="input-field">
-								<input type="text" name="name" class="form-control" id="name" required
+								<input 
+								data-container="nome"
+								type="text" name="nome" class="form-control" id="nome" required
 									data-validation-required-message="Please enter your name" />
-								<label for="name" class=""> Nome </label>
+								<label for="nome" class=""> Nome </label>
 								<p class="help-block"></p>
 
 							</div>
 							<div class="input-field">
-								<input type="email" class="form-control" id="email" required
+								<input 
+								data-container="email" type="email" class="form-control" id="email" required
+									name="email"
 									data-validation-required-message="Please enter your email" />
-								<label for="name" class=""> Email </label>
+								<label for="email" class=""> Email </label>
 							</div>
 							<div class="input-field">
-								<input type="email" class="form-control" id="email" required
+								<input data-container="tel" type="number" class="form-control" id="tel" required
+									name="tel"
 									data-validation-required-message="Please enter your email" />
-								<label for="name" class=""> Telefone </label>
+								<label for="tel" class=""> Telefone </label>
 							</div>
 
 							<div class="input-field">
-								<textarea rows="5" cols="100" required class="form-control materialize-textarea"
+								<textarea 
+								data-container="mensagem"
+								id="mensagem" name="mensagem"
+								rows="5" cols="100" required class="form-control materialize-textarea"
 									idation-required-message="Please enter your message" minlength="5"
 									data-validation-minlength-message="Min 5 characters" maxlength="999"
 									style="resize:none"></textarea>
-								<label for="name" class=""> Mensagem </label>
+								<label for="mensagem" class=""> Mensagem </label>
 							</div>
 
 							<div class="input-field">
@@ -520,8 +528,10 @@
 							</div>
 							<div id="success"> </div> <!-- For success/fail messages -->
 							<button type="submit"
+								name="BTEnvia" id="BTEnvia"
+								onclick="sendEmail()"
 								class="btn btn-primary waves-effect waves-dark pull-right">Enviar</button><br />
-						</form>
+						</div>
 					</div>
 					<div class="col-md-6">
 						<iframe
@@ -637,6 +647,7 @@
 	<script src="js/animate.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/app.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </body>
 
 </html>

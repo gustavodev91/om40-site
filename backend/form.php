@@ -2,16 +2,21 @@
 
 include(__DIR__.'/public/index.php');
 
-if (isset($_POST['BTEnvia']) && $_POST['BTEnvia']) {
+$msgEnviada = false;
+var_dump($_POST);die;
+
+if (isset($_POST['BTEnvia'])) {
+    
     $_POST['BTEnvia'] = false;    
     $erroPreenchimento = false;   
     $erroEnvioEmail = false;
  
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $tel = $_POST['tel'];
-    $mensagem = $_POST['mensagem'];
+    $nome = $_POST['data']['nome'];
+    $email = $_POST['data']['email'];
+    $tel = $_POST['data']['tel'];
+    $mensagem = $_POST['data']['mensagem'];
     $file = null;
+
 
     if(isset($_FILES['file']) && $_FILES['file']['size'] > 0){  
 
@@ -45,11 +50,12 @@ if (isset($_POST['BTEnvia']) && $_POST['BTEnvia']) {
         if (!sendMsg($nome, $email, $tel, $mensagem, $file)){            
             $msgForm .= 'Ocorreu um erro ao enviar o formulário!';            
         }else {
+            $msgEnviada = true;
             $msgForm .= 'Sua mensagem foi enviada.';
         }        
     }
 
-    $msgForm .= '</div>';    
-    
-    
+    $msgForm .= '</div>';
 }
+
+echo json_encode(array("msgEnviada"=>$msgEnviada, 'msgForm'=> $msgForm));
