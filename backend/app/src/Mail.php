@@ -35,7 +35,7 @@ class Mail{
 
             $mail->send();
             return true;
-        } catch (Exception $e) {
+        } catch (Exception $e) {            
             return false;        
         }
     }

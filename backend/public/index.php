@@ -1,7 +1,7 @@
 <?php
 
-require "php/vendor/autoload.php";
-require "php/app/src/Mail.php";
+require __DIR__."/../vendor/autoload.php";
+require __DIR__."/../app/src/Mail.php";
 
 
 function sendMsg($nome, $emailEnviado, $tel, $mensagem, $arquivo){
@@ -9,7 +9,7 @@ function sendMsg($nome, $emailEnviado, $tel, $mensagem, $arquivo){
     $email = new Mail();
     
     $msg = buildMessage($nome, $emailEnviado, $tel, $mensagem);
-    
+
     return $email->send($nome, $emailEnviado, $tel, $msg,$arquivo);
 
 }

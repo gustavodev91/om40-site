@@ -1,6 +1,6 @@
 <?php
 
-include('php/public/index.php');
+include(__DIR__.'/public/index.php');
 
 if (isset($_POST['BTEnvia']) && $_POST['BTEnvia']) {
     $_POST['BTEnvia'] = false;    
@@ -37,19 +37,19 @@ if (isset($_POST['BTEnvia']) && $_POST['BTEnvia']) {
     }
     
     $msgForm = '<div class="col-md-12">';
-
+    
     if(empty($nome) || empty($email) || empty($tel) || empty($mensagem)){
         $msgForm .= 'Existe campos incorretos!';        
         $erroPreenchimento = true;
     }else{
-        if (!sendMsg($nome, $email, $tel, $mensagem, $file)){
+        if (!sendMsg($nome, $email, $tel, $mensagem, $file)){            
             $msgForm .= 'Ocorreu um erro ao enviar o formulário!';            
         }else {
             $msgForm .= 'Sua mensagem foi enviada.';
         }        
     }
 
-    $msgForm .= '</div>';
+    $msgForm .= '</div>';    
     
     
 }
