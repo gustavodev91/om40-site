@@ -3,25 +3,23 @@
 include(__DIR__.'/public/index.php');
 
 $msgEnviada = false;
-var_dump($_POST);die;
 
-if (isset($_POST['BTEnvia'])) {
-    
-    $_POST['BTEnvia'] = false;    
-    $erroPreenchimento = false;   
+if (isset($_POST)) {
+
+    $_POST['BTEnvia'] = false;
+    $erroPreenchimento = false;
     $erroEnvioEmail = false;
- 
-    $nome = $_POST['data']['nome'];
-    $email = $_POST['data']['email'];
-    $tel = $_POST['data']['tel'];
-    $mensagem = $_POST['data']['mensagem'];
-    $file = null;
 
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $tel = $_POST['tel'];
+    $mensagem = $_POST['mensagem'];
+    $file = null;
 
     if(isset($_FILES['file']) && $_FILES['file']['size'] > 0){  
 
         $errors= array();
-        
+
         $file_name = $_FILES['file']['name'];
         $file_size =$_FILES['file']['size'];
         $file_tmp =$_FILES['file']['tmp_name'];

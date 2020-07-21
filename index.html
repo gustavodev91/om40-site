@@ -483,7 +483,7 @@
 						<p> </p>
 
 						<!-- Form itself -->
-						<div name="sentMessage" id="contactForm" novalidate>
+						<form id="form-contato" method="post" name="sentMessage" id="contactForm" novalidate>
 							<div class="input-field">
 								<input 
 								data-container="nome"
@@ -528,10 +528,9 @@
 							</div>
 							<div id="success"> </div> <!-- For success/fail messages -->
 							<button type="submit"
-								name="BTEnvia" id="BTEnvia"
-								onclick="sendEmail()"
+								name="BTEnvia" id="BTEnvia"								
 								class="btn btn-primary waves-effect waves-dark pull-right">Enviar</button><br />
-						</div>
+						</form>
 					</div>
 					<div class="col-md-6">
 						<iframe
