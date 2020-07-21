@@ -4,6 +4,7 @@ include(__DIR__.'/public/index.php');
 
 $msgEnviada = false;
 
+
 if (isset($_POST)) {
 
     $_POST['BTEnvia'] = false;
@@ -26,21 +27,21 @@ if (isset($_POST)) {
         $file_type=$_FILES['file']['type'];
         $file_ext=strtolower(end(explode('.',$_FILES['file']['name'])));
 
-        $extensions= array("jpeg","jpg","png","pdf","ppt","doc","docx");
+        // $extensions= array("jpeg","jpg","png","pdf","ppt","doc","docx");
 
-        if(in_array($file_ext,$extensions)=== false){
-            $errors[]="Extensão não permitida";
-        }
+        // if(in_array($file_ext,$extensions)=== false){
+        //     $errors[]="Extensão não permitida";
+        // }
 
-        if($file_size > 8388608){
-            $errors[]='Tamanho deve ser menor que 8 MB';
+        if($file_size > 25000000){
+            $errors[]='Tamanho deve ser menor que 25 MB';
         }
   
         $file = $_FILES['file'];
     }
     
     $msgForm = '<div class="col-md-12">';
-    
+
     if(empty($nome) || empty($email) || empty($tel) || empty($mensagem)){
         $msgForm .= 'Existe campos incorretos!';        
         $erroPreenchimento = true;
