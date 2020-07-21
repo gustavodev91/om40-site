@@ -1,5 +1,4 @@
 <?php
-echo phpinfo();die;
 include(__DIR__.'/public/index.php');
 
 $msgEnviada = false;
