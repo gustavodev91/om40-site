@@ -1,5 +1,5 @@
 <?php
-
+echo phpinfo();die;
 include(__DIR__.'/public/index.php');
 
 $msgEnviada = false;
@@ -19,7 +19,7 @@ if (isset($_POST)) {
 
     if(isset($_FILES['file']) && $_FILES['file']['size'] > 0){  
 
-        $errors= array();
+        $errors = false;
 
         $file_name = $_FILES['file']['name'];
         $file_size =$_FILES['file']['size'];
@@ -34,7 +34,7 @@ if (isset($_POST)) {
         // }
 
         if($file_size > 25000000){
-            $errors[]='Tamanho deve ser menor que 25 MB';
+            $errors=true;
         }
   
         $file = $_FILES['file'];
@@ -42,7 +42,7 @@ if (isset($_POST)) {
     
     $msgForm = '<div class="col-md-12">';
 
-    if(empty($nome) || empty($email) || empty($tel) || empty($mensagem)){
+    if(empty($nome) || empty($email) || empty($tel) || empty($mensagem || $errors == true)){
         $msgForm .= 'Existe campos incorretos!';        
         $erroPreenchimento = true;
     }else{

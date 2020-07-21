@@ -17,60 +17,51 @@ $(".custom-file-input").on("change", function() {
 
 
   
-    $("#form-contato").on('submit',(function(e) {
-      document.getElementById("BTEnvia").textContent = "Enviando...";
-      e.preventDefault();
-      $.ajax({
-        url:"../backend/form.php",
-        type: "POST",
-        data:  new FormData(this),
-        contentType: false,
-        cache: false,
-        processData:false,
-        success:function(result){
-          result = JSON.parse(result);
-          document.getElementById("BTEnvia").textContent = "Enviar";
-          alert(result.msgEnviada ? 'Email enviado': 'O email não foi enviado');       
-        },
-        error: function(erro){
-          document.getElementById("BTEnvia").textContent = "Enviar";
-          alert('Ocorreu um erro ao enviar o email');       
-        }
-      })
-    }));
-
-
-  // function sendEmail() {
-
-  //   var data = {}
-  //   var form_data = new FormData();
-
-  //   data.nome = document.getElementById("nome").value;
-  //   data.email = document.getElementById("email").value;
-  //   data.tel = document.getElementById("tel").value;
-  //   data.mensagem = document.getElementById("mensagem").value;
+  $("#form-contato").on('submit',(function(e) {
+         
+    e.preventDefault();
     
-  //   data.file = null;
+    valida = validaFormulario(new FormData(this));
 
-  //   if($("#file").prop('files')[0]){
-  //     data.file = new FormData($("#file"));
-  //     // form_data.append("file",$("#file").prop('files')[0]);
-  //     // data.file = form_data;
-  //   }    
-    
-  //   console.log(data);
+    if(valida.val == false){
+      alert(valida.msg);
+      return;
+    }
 
-  //   $.ajax({
-  //     url:"../backend/form.php", //the page containing php script
-  //     type: "post", //request type,
-  //     dataType: 'json',
-  //     data: {registration: "success", data : data, BTEnvia: true},
-  //     success:function(result){
-  //       alert(result.msgEnviada ? 'Email enviado': 'O email não foi enviado');       
-  //     },
-  //     error: function(erro){
-  //       alert('Ocorreu um erro ao enviar o email');       
-  //     }
-  //   });
-  // }
+    document.getElementById("BTEnvia").textContent = "Enviando..."; 
 
+    $.ajax({
+      url:"../backend/form.php",
+      type: "POST",
+      data:  new FormData(this),
+      contentType: false,        
+      cache: false,
+      processData:false,        
+      success:function(result){
+        result = JSON.parse(result);
+        document.getElementById("BTEnvia").textContent = "Enviar";
+        alert(result.msgEnviada ? 'Email enviado': 'O email não foi enviado');       
+      },
+      error: function(erro){
+        retornoEmail(erro)          
+      }
+    })
+  }));
+
+  function retornoEmail(_return){
+    document.getElementById("BTEnvia").textContent = "Enviar";
+    alert(_return.status == '200' ? 'Email enviado' : 'Ocorreu um erro ao enviar seu contato')      
+  }
+
+  function validaFormulario(form){
+    val = true;
+    msg = ''
+    if(form.get('file').size >= 25000000){
+      val = false;
+      msg = 'Arquivo deve ser menor que 25Mb';
+    }      
+    return {
+      val, 
+      msg
+    }
+  }
