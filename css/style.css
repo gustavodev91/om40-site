@@ -2137,3 +2137,16 @@ span.color {
 .alert-danger {
 	float: left;
 }
+
+.section-heading{
+	font-size: 2.5rem;
+	margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+.section-subheading{
+
+} 
+.text-muted{
+	color: #6c757d;
+}
