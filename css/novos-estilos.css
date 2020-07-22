@@ -35,3 +35,36 @@
     padding-top: 10px;
     text-align: center;
 }
+
+
+.titulo-principal{
+    font-style: normal;
+    font-size: 6.5rem;
+    font-weight: 700;
+    padding-top: 34px;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+}
+
+
+.btn-banner{
+    margin-top: 43px;
+    width: 340px;
+    height: 72px;
+    font-size: 26px;
+    border-radius: 54%;
+    border-radius: 0.25rem !important;
+    border-color: #fed136;
+    background-color: #fed136;
+    color: #fff;
+    font-style: normal;
+    padding-top: 13px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.btn-banner:hover{
+    color: #fff;
+    background-color: #fec810;
+    border-color: #fec503;;
+}
