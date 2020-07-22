@@ -23,3 +23,15 @@
 .span-title{
 	color: #ababab;
 }
+
+.ico-info-style{
+	border: 1px solid;
+    border-radius: 50%;
+    color: #fff;
+    width: 156px;
+    font-size: 129px;
+    background-color: #fed136;
+    height: 156px;
+    padding-top: 10px;
+    text-align: center;
+}

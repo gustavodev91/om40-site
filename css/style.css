@@ -1133,14 +1133,16 @@ section.section-padding.gray-bg {
 .info-blocks .info-blocks-in {
 	padding: 46px 22px;
 	overflow: hidden;
-	border: 1px solid #dedede;
+	
 	text-align: center;
 	background: #fff;
 }
 
 .info-blocks .info-blocks-in h3 {
 	color: #202020;
-	font-size: 22px;
+	font-weight: bold;
+    padding-top: 14px;
+	font-size: 30px;
 	line-height: 28px;
 	margin: 0px;
 	margin-bottom: 8px;
@@ -1151,9 +1153,7 @@ section.section-padding.gray-bg {
 	font-size: 14px;
 }
 
-.info-blocks .info-blocks-in:hover {
-	border: 1px solid #788abb;
-}
+
 
 blockquote {
 	font-size: 16px;
@@ -2139,14 +2139,18 @@ span.color {
 }
 
 .section-heading{
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	margin-top: 0px;
-    margin-bottom: 6px;
+	margin-bottom: 6px;
+	padding-top: 39px;
+    padding-bottom: 10px;
 }
 
 .section-subheading{
-
+	text-align: center !important;
 } 
 .text-muted{
 	color: #6c757d;
+	line-height: 1.75;
+	font-size: 19px;
 }
