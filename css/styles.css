@@ -474,6 +474,11 @@ mark,
 }
 
 .img-fluid {
+  max-width: 80%;
+  height: auto;
+}
+
+.img-fluid-parceiros {
   max-width: 100%;
   height: auto;
 }
