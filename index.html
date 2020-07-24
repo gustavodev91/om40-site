@@ -1,653 +1,621 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<title>OpenMaker 4.0</title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="" />
-	<meta name="author" content="http://webthemez.com" />
-	<!-- css -->
-
-	<link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'/>
-
-	<link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
-	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-	<link href="css/flexslider.css" rel="stylesheet" />
-	<link href="css/style.css" rel="stylesheet" />
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/gallery-1.css" rel="stylesheet">
-	<link href="css/novos-estilos.css" rel="stylesheet">
-	
-
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>OpenMaker</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <!--<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="" /></a>-->
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/logos/navbar-logo1.png" alt="" /></a>
+            
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ml-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Iniciativas</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Podcast</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#mantenedores">Mantenedores</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Parceiros">Parceiros</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#mapa">Localização</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div style="margin-top: 25px" class="container">
+            <div style="line-height: 45px" class="masthead-subheading">CONECTAMOS E GERAMOS VALOR PARA INDÚSTRIAS,
+                ACADEMIA, GOVERNO E ECOSSISTEMAS DE INOVAÇÃO
+            COM FOCO NA INDÚSTRIA 4.0</div>
+            <div class="masthead-heading text-uppercase">Open Maker</div>
+            <a style="margin-top: 40px" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://www.youtube.com/watch?v=nEz3j4k_qI8&feature=emb_title" target="_blank">Conheça nosso espaço</a>
+        </div>
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Sobre nós</h2>
+                <p class="section-subheading text-muted">O OpenMaker 4.0 busca conectar indústrias, academia, governo e ecossistemas de inovação.
 
-<body>
-	<div id="wrapper" class="home-page">
-		<!-- start header -->
-		<header data-container="menu" class="menu-fixo">
-			<div class="navbar navbar-default navbar-static-top" >
-				<div class="container" style="padding: 0px;">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse"
-							data-target=".navbar-collapse">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="index.html">
-							<i class="icon-info-blocks">Open</i>
-							<span class="span-title">Maker</span>
-							
-						</a>
-					</div>
-					<div class="navbar-collapse collapse ">
-						<ul class="nav navbar-nav">
-							<li class="active"><a class="waves-effect waves-dark" href="#sobre">Sobre</a></li>
-							<li><a class="waves-effect waves-dark" href="#iniciativas">Iniciativas</a></li>
-							<li><a class="waves-effect waves-dark" href="#podcast">Podcast</a></li>
-							<li><a class="waves-effect waves-dark" href="#mantenedores">Mantenedores</a></li>
-							<li><a class="waves-effect waves-dark" href="#parceiros">Parceiros</a></li>
-							<li><a class="waves-effect waves-dark" href="#contato">Contato</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- end header -->
+                    Seu propósito é a geração de valor efetivo para os participantes através de diferentes ações relacionadas e direcionadas à indústria 4.0 com vistas à criação de cultura, experimentação e implantação levando em conta a realidade e a maturidade de cada indústria participante.
 
-		<div data-container="div-suporte" id="div-suporte"></div>
-		<section id="banner">
+                    A visão indústria 4.0 é realizar uma transformação na maneira como os produtos são produzidos através da fusão entre o mundo real o virtual envolvendo a digitalização de processos, o uso de Internet das Coisas (IoT), inteligência artificial (AI), computação na borda, em névoa e em nuvem e ainda as novas tecnologias e redes de comunicação como 5G.
 
-			<!-- Slider -->
-			<div id="main-slider" class="flexslider">
-				<ul class="slides">
-					<li>
-						<img src="assets/images/carrosel/img1.jpg" alt="" />
-						<div class="flex-caption">						
-						</div>
-					</li>
-					<li>
-						<img src="assets/images/carrosel/img2.jpg" alt="" />
-						<div class="flex-caption">							
-						</div>
-					</li>
-					
+                Para realizar seu propósito, Openmaker 4.0 busca inovar na maneira de realizar a conexão entre as indústrias e os diversos parceiros e mantenedores contribuindo realizar uma inovação alinhada à indústria 4.0.</p>
+            </div>
 
-				</ul>
-			</div>
-			<!-- end slider -->
+            <div class="container">
+                <div class="text-center">
+                    <h3 class="section-heading text-uppercase" style="margin: 40px">Valores</h3>
+                </div>
+            </div>
 
-			<div id="sobre" class="texto-primario">
-				<p> Conectamos e geramos valor para 
-					indústrias, <br>academia,
-					 governo e ecossistemas de inovação 
-					 <br>
-					 com foco na indústria 4.0
-				</p>
-			</div>
-		</section>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Network</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-lightbulb fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Mudança de Mindset</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-search fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Experimentação</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Iniciativas</h2>
+                <h3 class="section-subheading text-muted">Acompanhe todas as iniciativas do Open Maker</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/iniciativa1.png" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Tied 4.0</div>
+                            <div class="portfolio-caption-subheading text-muted">Iniciativa colaborativa entre indústria, startups e academia</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/iniciativa2.png" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Máscaras Safe Shield</div>
+                            <div class="portfolio-caption-subheading text-muted">Iniciativa em apoio à Secretaria de Saúde de Uberlândia</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/desafios.png" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Desafios</div>
+                            <div class="portfolio-caption-subheading text-muted">Fique atento nos desafios lançados em parcerias com empresas e academia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About-->
+    <!--<section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2009-2011</h4>
+                            <h4 class="subheading">Our Humble Beginnings</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>March 2011</h4>
+                            <h4 class="subheading">An Agency is Born</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>December 2012</h4>
+                            <h4 class="subheading">Transition to Full Service</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>July 2014</h4>
+                            <h4 class="subheading">Phase Two Expansion</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Be Part
+                            <br />
+                            Of Our
+                            <br />
+                            Story!
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>-->
 
-		<section  class="dishes" id="content" style="padding-top: 0px;">
-			<div style="padding: 0px;margin-left: 4%;margin-right: 4%;">
+    <!-- Podcast-->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Podcast</h2>
+                <h3 class="section-subheading text-muted">Ouça já o nosso Podcast! O OpenMakerCast nasceu para apoiar e conectar micro e pequenos empreendedores, startups e grandes empresas que querem ficar por dentro do mundo da inovação, cultura e novos negócios!</h3>
+                <iframe src="https://anchor.fm/dione-luis-souza-barbosa/embed/episodes/Piloto---OpenMakerCast-egq7ct" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+            </div>
 
-				<section class="services" id="sobre">
-					<div class="row">
-						<div class="col-md-12 pl-0 pr-0" style="padding-left: 0px;padding-right: 0px;">
-							<div class="aligncenter">
-								<div data-container="texto-completo" class="col-md-6" 
-								style="padding-left: 0px;padding-right: 36px;">
-									<div>
-										<h2 class="aligncenter" style="margin-top: 0px;margin-bottom: 6px;">
-											Open Maker 4.0
-										</h2>
-									</div>
-									<div style="font-size: 19px;text-align: left;">
-										<p>
-											O OpenMaker 4.0 busca conectar indústrias, academia, governo e ecossistemas de inovação. 
-										</p>										
-										<p>
-											Seu propósito é a geração de valor efetivo para os participantes através de diferentes ações relacionadas e direcionadas à indústria 4.0 com vistas à criação de cultura, experimentação e implantação levando em conta a realidade e a maturidade de cada indústria participante.
-										</p>
-										<p>
-											A visão indústria 4.0 é realizar uma transformação na maneira como os produtos são produzidos através da fusão entre o mundo real o virtual envolvendo a digitalização de processos, o uso de Internet das Coisas (IoT), inteligência artificial (AI), computação na borda, em névoa e em nuvem e ainda as novas tecnologias e redes de comunicação como 5G. 
-										</p>
-										<p>
-											Para realizar seu propósito, Openmaker 4.0 busca inovar na maneira de realizar a conexão entre as indústrias e os diversos parceiros e mantenedores contribuindo realizar uma inovação alinhada à indústria 4.0.
-										</p>
-									</div>
-								</div>
-								<div class="col-md-6" style="padding-left: 36px;padding-right: 0px;">
-									<iframe data-container="iframe-video" width="100%" height="315" src="https://www.youtube.com/embed/nEz3j4k_qI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								</div>
-							</div>
-							<br />
-						</div>
-					</div>
+        </div>
+    </section>
 
-					<div class="row">
-						<div class="col-sm-4 info-blocks">
-							<div class="info-blocks-in">
-								<!-- <i class="icon-info-blocks ">perm_identity</i> -->
-								<i class="icon-info-blocks fa fa-users" aria-hidden="true"></i>
-								<h3>Network</h3>
-								<div class="line"></div>
+    <!-- Team-->
+    <!--<section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Nossos Mantenedores</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="" />
+                        <h4>Brain</h4>
+                        <p class="text-muted">Lead Designer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
+                        <h4>BRF</h4>
+                        <p class="text-muted">Lead Marketer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="" />
+                        <h4>Cargill</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="" />
+                        <h4>Cargill</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="" />
+                        <h4>Cargill</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+            </div>
+        </div>
+    </section>-->
 
-							</div>
-						</div>
-						<div class="col-sm-4 info-blocks">
-							<div class="info-blocks-in">
-								<i class="icon-info-blocks material-icons">psychology</i>
-								<h3>Mudança de mindset</h3>
-								<div class="line"></div>
-							</div>
-						</div>
-						<div class="col-sm-4 info-blocks">
-							<div class="info-blocks-in">
-								<i class="icon-info-blocks material-icons">3d_rotation</i>
-								<h3>Experimentação</h3>
-								<div class="line"></div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-		</section>
+    <!-- Portfolio-->
 
-		<section id="iniciativas">
-			<div class="container">
-				<div class="row" style="margin-bottom: 0px;">
-					<div class="col-md-12">
-						<div class="aligncenter">
-							<h2 class="aligncenter">Iniciativas</h2>
-							<a href="iniciativas/iniciativas.html">Acompanhe todas iniciativas do OpenMaker</a>
-						</div>
-						<br />
-					</div>
-				</div>
-				<div class="col-md-12">
-					<div class="col-md-2">
+    <section class="page-section bg-light" id="portfolio">
 
-					</div>									
-					<div class="row col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 0px;">					
-						<div id="isotope-gallery-container">
-							<div class="gallery-item-wrapper artwork creative">
-								<div class="gallery-item">
-									<div class="gallery-thumb" style="height: 240px;padding-top: 47px;background-color: #fff;/* text-align: -webkit-center; */border: 4px solid #fff;">
-										<a href="iniciativas/tied40.html">
-											<img src="assets/images/iniciativas/TIED4.0-BANNER.png" 
-											class="img-responsive" alt="Iniciativa 1" >
-											<div class="image-overlay"></div>
-											<a class="gallery-zoom" href="iniciativas/tied40.html"><i class="fa fa-eye"></i></a>
-										</a>
-									</div>
-									<div class="gallery-details">
-										<div class="editContent">
-											<h5>TIED 4.0</h5>
-										</div>
-										<div class="editContent">
-											<p>União entre indústria, startups e academia para a pesquisa e o desenvolvimento de tecnologia, 
-												dispositivos e aplicações inovadoras para a Indústria 4.0</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-							
-					<div class="row col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 0px;">					
-						<div id="isotope-gallery-container">
-							<div class="gallery-item-wrapper artwork creative">
-								<div class="gallery-item">
-									<div class="gallery-thumb" style="background-color: #fff;text-align: -webkit-center;border: 4px solid #fff;">
-										<a href="iniciativas/mascara-safe-shield.html">
-											<img src="assets/images/iniciativas/mascSafeShield.jpeg" 
-											class="img-responsive" alt="Iniciativa 1" 
-											style="height: 233px;">
-											<div class="image-overlay"></div>
-											<a class="gallery-zoom" href="iniciativas/mascara-safe-shield.html"><i class="fa fa-eye"></i></a>
-										</a>
-									</div>
-									<div class="gallery-details">
-										<div class="editContent">
-											<h5>Máscaras Safe Shield</h5>
-										</div>
-										<div class="editContent">
-											<p>
-												Iniciativa em apoio a Secretaria de Saúde de Uberlândia											
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>		
-						</div>
-					</div>
+       <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase" id="mantenedores">Mantenedores</h2>
+            
 
+            <div id="portfolio">
+                <div class="container-fluid p-0">
+                    <div class="row no-gutters">
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="https://www.inovacaobrain.com.br/" target="_blank">
+                                <img class="img-fluid" src="assets/img/portfolio/logo-brain1.png" alt="" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-name">Visite agora o site da Brain</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="https://www.brf-global.com/" target="_blank">
+                                <img class="img-fluid" src="assets/img/portfolio/logo-brf1.png" alt="" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-name">Visite agora o site da BRF</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="https://www.cargill.com.br/" target="_blank">
+                                <img class="img-fluid" src="assets/img/portfolio/logo-cargill1.png" alt="" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-name">Visite agora o site da Cargill</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="https://www.sebrae.com.br/sites/PortalSebrae" target="_blank">
+                                <img class="img-fluid" src="assets/img/portfolio/logo-sebrae1.png" alt="" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-name">Visite agora o site do Sebrae</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="https://www7.fiemg.com.br/senai" target="_blank">
+                                <img class="img-fluid" src="assets/img/portfolio/senai1.png" alt="" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-name">Visite agora o site do Senai</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="http://www.vli-logistica.com.br/" target="_blank">
+                                <img class="img-fluid" src="assets/img/portfolio/logo-vl1.png" alt="" />
+                                <div class="portfolio-box-caption p-3">
+                                    <div class="project-name">Visite agora o site da VL!</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-							<!-- /.gallery-item-wrapper -->
-							
-							
-						</div>
-						
-					</div>
-				</div>
-				<div class="row" style="text-align: center;padding: 40px;" >
-					<a href="iniciativas/iniciativas.html">
-						<button class="btn btn-primary">
-							Ver mais
-						</button>
-					</a>
-				</div>
-		</section>
+<!-- Clients-->
+<div class="py-5">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase" id="Parceiros">Parceiros</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://www.algartelecom.com.br/para-voce" target="_black"><img class="img-fluid d-block mx-auto" src="assets/img/logos/algar.png" alt="" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://www.eurobras.com.br/" target="_black"><img class="img-fluid d-block mx-auto" src="assets/img/logos/eurobras1.png" alt="" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://www.granjamarileusa.com.br/" target="_black"><img class="img-fluid d-block mx-auto" src="assets/img/logos/granja.png" alt="" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://mackwave.com/" target="_black"><img class="img-fluid d-block mx-auto" src="assets/img/logos/mackwave1.png" alt="" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://startadora.com/" target="_black"><img class="img-fluid d-block mx-auto" src="assets/img/logos/startadora.png" alt="" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://www.startse.com/" target="_black"><img class="img-fluid d-block mx-auto" src="assets/img/logos/burn.png" alt="" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="http://www.uberhub.com.br/" target="_black"><img class="img-fluid d-block mx-auto" src="assets/img/logos/uberhub.png" alt="" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="http://www.ufu.br/" target="_black"><img class="img-fluid d-block mx-auto" src="assets/img/logos/UFU.png" alt="" /></a>
+            </div>
+            <div class="col-md-6 col-sm-6 my-3">
+                <a href="https://www.weme.com.br/" target="_black"><img class="img-fluid d-block mx-auto" src="assets/img/logos/weme.png" alt="" /></a>
+            </div>
+            <div class="col-md-6 col-sm-6 my-3">
+                <a href="https://redeglobo.globo.com/mg/tvintegracao/" target="_black"><img class="img-fluid d-block mx-auto" src="assets/img/logos/tvintegracao.png" alt="" /></a>
+            </div>
+        </div>
+    </div>
+</div>
 
-		<section class="dishes" id="podcast">
-			<div class="container">
-				<div class="row" style="margin-bottom: 0px;">
-					<div class="col-md-12">
-						<div class="aligncenter">
-							<h2 class="aligncenter">Podcast</h2>
-							<a href="podcast.html">Escute nossos episódios</a>
-						</div>
-						<br />
-					</div>
-				</div>
-				<div class="row" style="margin-bottom: 0px;padding: 10px 0px 10px 0px;">
-					<!-- <div class="col-md-4"></div> -->
-					<div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
-							<iframe src="https://anchor.fm/dione-luis-souza-barbosa/embed/episodes/Piloto---OpenMakerCast-egq7ct" 
-							height="100px" width="100%" frameborder="0" scrolling="no"										
-							></iframe>							
-					</div>
-					
-				</div>
-				<div class="row" style="text-align: center;padding: 40px">
-					<a href="podcast.html">
-						<button class="btn btn-primary">
-							Ver mais
-						</button>
-					</a>
-				</div>
-			</div>				
-		</section>
+<!-- Map -->
+<section class="page-section bg-light" id="mapa">
+ <div class="text-center">
+    <h2 class="section-heading text-uppercase">Localização</h2>
+</div> 
+<div id="contact" class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.159047329177!2d-48.251086185273444!3d-18.880024087200677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44505fcf7dccf%3A0x1198bba59b363f35!2sOpenMaker4.0!5e0!3m2!1sen!2sus!4v1595352166515!5m2!1sen!2sus"></iframe>
+    <br />
+    <small>
+      <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.159047329177!2d-48.251086185273444!3d-18.880024087200677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44505fcf7dccf%3A0x1198bba59b363f35!2sOpenMaker4.0!5e0!3m2!1sen!2sus!4v1595352166515!5m2!1sen!2sus"></a>
+  </small>
+</div>
+</section>
 
-		<section id="mantenedores">
-			<div class="container">
-				<div class="row" style="margin-bottom: 0px;">
-					<div class="col-md-12">
-						<div class="aligncenter">
-							<h2 class="aligncenter">Nossos Mantenedores</h2>							
-						</div>
-						<br/>
-					</div>
-				</div>
+<!-- Contact-->
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase" id="contato">Entre em Contato</h2>
+            <h3 class="section-subheading text-muted">Retornaremos sua mensagem o mais breve possível</h3>
+        </div>
+        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row align-items-stretch mb-5">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="name" type="text" placeholder="Seu Nome *" required="required" data-validation-required-message="Please enter your name." />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="email" type="email" placeholder="Seu Email *" required="required" data-validation-required-message="Please enter your email address." />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group mb-md-0">
+                        <input class="form-control" id="phone" type="tel" placeholder="Seu Celular *" required="required" data-validation-required-message="Please enter your phone number." />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0">
+                        <textarea class="form-control" id="message" placeholder="Sua Menssagem *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <div id="success"></div>
+                <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Enviar Menssagem</button>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright 2020 © OpenMaker. All rights reserved.</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <!--<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>-->
+                <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/channel/UCPCtyVNYgkM70IS4RWk5F0w" target="_blank"><i class="fab fa-youtube"></i></a>
+                <!--<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>-->
+            </div>
+            <div class="col-lg-4 text-lg-right">openmaker4.0@gmail.com</div>
+        </div>
+    </div>
+</footer>
+<!-- Portfolio Modals-->
+<!-- Modal 1-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">Tied 4.0</h2>
+                            <p class="item-intro text-muted">Conheça um pouco mais sobre a iniciativa Tied 4.0</p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/tied-plus.png" alt="" />
+                            <p>O projeto TIED4.0 tem por objetivo unir competências em termos de infraestrutura física, técnica e de pessoal para a pesquisa e o desenvolvimento de tecnologia, dispositivos e aplicações inovadoras para a Indústria 4.0, através da criação e utilização de um ambiente experimental (testbed) que permita o projeto de negócios a partir de diferentes soluções criadas com base nas necessidades de empresas com apoio de startups e da academia.</p>
+                            <h3>Equipe</h3>
+                            <p>Desde sua concepção o projeto nasce da junção dos diferentes setores representados pela Brasil Foods (BRF), BRAIN, FIEMG e UFU. O TIED4.0 busca criar um modelo técnico e de negócio para a exploração da indústria 4.0 baseados na convergência tecnológica, centrada nos diferentes parceiros envolvidos com foco ainda na agregação de novas indústrias e instalações ampliando ainda mais o seu impacto na indústria Brasileira.</p>
+                            <h3>Apoio</h3>
+                            <p>O projeto é financiado Agência Brasileira de Desenvolvimento Industrial (ABDI) no âmbito do Edital de Chamamento Público nº 1/2018, do MDIC, atual Ministério da Economia, cujo foco é testar tecnologias relacionadas com a Indústria 4.0.</p>
 
-				<div class="row service-v1 margin-bottom-40">
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="https://www.inovacaobrain.com.br" target="_blank">
-							<div class="card small">
-								<div class="card-image" style="padding: 31px 29px 24px;">
-									<img class="img-responsive" src="assets/images/mantenedores/brain.png" alt=""
-										style="width: 187px;height: 124px;">
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="https://www.brf-global.com/" target="_blank">
-							<div class="card small">
-								<div class="card-image" style="
-							padding: 42px;
-						">
-									<img class="img-responsive" src="assets/images/mantenedores/brf.jpg" alt="">
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="http://www.cargill.com.br/" target="_blank">
-							<div class="card small">
-								<div class="card-image" style="padding: 55px;">
-									<img class="img-responsive" src="assets/images/mantenedores/cargil.png" alt="">
-								</div>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Fechar Janela
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 2-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">Máscaras Safe Shield</h2>
+                            <p class="item-intro text-muted">Conheça mais sobre essa ação para auxiliar profissionais da saúde</p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/iniciativa2.png" alt="" />
+                            <p>O Hub de Inovação, voltado para a indústria 4.0, uniu forças e tecnologia para auxiliar profissionais da área da saúde em Uberlândia na luta contra o novo Coronavírus. Com a falta de equipamentos de proteção nos hospitais, as empresas desenvolveram, com o uso de impressoras 3D, suportes das máscaras Face Shield, um equipamento de proteção individual mais seguro, com uma placa de acetato que cobre todo o rosto do profissional de saúde.
 
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="https://www.sebrae.com.br/" target="_blank">
-							<div class="card small">
-								<div class="card-image" style="padding: 53px;">
-									<img class="img-responsive" src="assets/images/mantenedores/sebrae.png" alt="">
-								</div>
+                            As máquinas foram usadas pelos colaboradores do SENAI que fizeram uso de toda a estrutura já presente no Open Maker. A produção dos suportes dura em torno de uma hora e meia a duas horas, isso porque a equipe padronizou uma determinada qualidade para ganhar tempo. A demanda de início foi de cerca de 320 suportes que fixam na placa de acetato. Toda essa produção veio ao encontro com o grupo criado na cidade denominado “Juntos por Uberlândia”. Toda essa produção foi doada para a Secretaria Municipal de Saúde de Uberlândia e, posteriormente, direcionado às unidades de atendimento.</p>
 
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="https://www7.fiemg.com.br/senai" target="_blank">
-							<div class="card small">
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Fechar Janela
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 3-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">Desafios</h2>
+                            <p class="item-intro text-muted">Fique atento nos desafios oferecidos pelos nossos parceiros divulgados abaixo</p>
+                            <!--<img class="img-fluid d-block mx-auto" src="assets/img/portfolio/desafios.png" alt="" />
+                            <p>Informações sobre datas e organizadores, além de seus respectivos links, de desafios relacionados à inovação. </p>
+                            <h3>Desafio XXXX</h3>
+                            <ul class="list-inline">
+                                <li>Data:</li>
+                                <li>Organizador:</li>
+                                <li>Link de acesso:</li>
+                            </ul>-->
 
-								<div class="card-image" style="padding: 14px;">
-									<img class="img-responsive" src="assets/images/mantenedores/senai.png" alt="">
-								</div>
+                           <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <a href="https://inovavli.com.br/desafio/" target="_blank"><img src="assets/img/portfolio/banner1.png" class="d-block w-100" alt="..."></a>
+                              </div>
+                              <div class="carousel-item">
+                                  <a href="https://www.brfhub.com/pt/desafios/" target="_blank"><img src="assets/img/portfolio/banner2.png" class="d-block w-100" alt="..."></a>
+                              </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>-->
 
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="http://www.vli-logistica.com.br/" target="_blank">
-							<div class="card small">
-								<div class="card-image" style="padding: 37px;">
-									<img class="img-responsive" src="assets/images/mantenedores/vli.png" alt=""
-										style="width: 150px;">
-								</div>
-						</a>
-					</div>
-				</div>
+                    <!-- /.row -->
+                    <div class="container">
+                        <div class="text-center">
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                <div class="card h-100">
+                                  <img class="card-img-top" src="assets/img/portfolio/desafiobrf.png" alt="">
+                                  <div class="card-body">
+                                    <h4 class="card-title">brf hub</h4>
+                                    <p class="card-text">Possuimos diversos desafios para encaixar perfeitamente com o seu perfil!</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://www.brfhub.com/pt/desafios/" target="_blank" class="btn btn-primary">Saiba Mais!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <div class="card h-100">
+                              <img class="card-img-top" src="assets/img/portfolio/desafiosvli.png" alt="">
+                              <div class="card-body">
+                                <h4 class="card-title">VL!</h4>
+                               <p class="card-text">Desafios de temas distintos e atuais!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://inovavli.com.br/desafio/" target="_blank" class="btn btn-primary">Saiba Mais!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
 
-			</div>
-		</section>
+        <button style="margin-top: 50px" class="btn btn-primary" data-dismiss="modal" type="button">
+            <i class="fas fa-times mr-1"></i>
+            Fechar Janela
+        </button>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-		<section class="dishes" id="parceiros">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="aligncenter">
-							<h2 class="aligncenter">Nossos Parceiros</h2>							
-						</div>
-						<br />
-					</div>
-				</div>
-
-				<div class="row service-v1 margin-bottom-40">
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="https://www.algartelecom.com.br" target="_blank">
-							<div class="card small">
-								<div class="card-image"
-									style="width: 240px;height: 163px;padding-left: 28px;padding-top:37px;">
-									<img class="img-responsive" src="assets/images/parceiros/algartelecom.png" alt="">
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="https://www.eurobras.com.br/" target="_blank">
-							<div class="card small">
-								<div class="card-image" style="padding: 49px;">
-									<img class="img-responsive" src="assets/images/parceiros/eurobras.png" alt="">
-								</div>
-
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="https://www.granjamarileusa.com.br" target="_blank">
-							<div class="card small">
-								<div class="card-image" style="height: 163px;padding: 48px 10px;">
-									<img class="img-responsive" src="assets/images/parceiros/marileusa.svg" alt="">
-								</div>
-
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="https://mackwave.com/" target="_blank">
-							<div class="card small">
-								<div class="card-image" style="height: 163px;">
-									<img class="img-responsive" src="assets/images/parceiros/mackwave.jpg" alt="">
-								</div>
-
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="https://startadora.com" target="_blank">
-							<div class="card small">
-								<div class="card-image" style="height: 163px;padding: 55px 28px;">
-									<img class="img-responsive" src="assets/images/parceiros/startadora.png" alt="">
-								</div>
-
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="https://www.startse.com/" target="_blank">
-							<div class="card small">
-								<div class="card-image" style="height: 163px;padding: 55px 28px;">
-									<img class="img-responsive" src="assets/images/parceiros/startse.png" alt="">
-								</div>
-
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="http://www.uberhub.com.br/" target="_blank">
-							<div class="card small">
-								<div class="card-image"
-									style="height: 163px;padding-left: 59px;">
-									<img class="img-responsive" src="assets/images/parceiros/uberhub.png" alt=""
-										style="width: 150px;">
-								</div>
-
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="http://www.ufu.br" target="_blank">
-							<div class="card small">
-								<div class="card-image"
-									style="height: 163px;padding: 64px 28px;">
-									<img class="img-responsive" src="assets/images/parceiros/ufu.png" alt="">
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="https://www.weme.com.br/" target="_blank">
-							<div class="card small">
-								<div class="card-image"
-									style="padding-top: 13px;padding-left: 58px;padding-bottom: 24px;">
-									<img class="img-responsive" src="assets/images/parceiros/weme.png" alt=""
-										style="width: 150px;height: 150px;">
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 md-margin-bottom-40">
-						<a href="https://redeglobo.globo.com/mg/tvintegracao/" target="_blank">
-							<div class="card small">
-								<div class="card-image" style="padding: 8px;">
-									<img class="img-responsive" src="assets/images/parceiros/tv_integracao.jpg" alt="">
-								</div>
-
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="contato">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<p> </p>
-
-						<!-- Form itself -->
-						<form id="form-contato" method="post" name="sentMessage" id="contactForm" novalidate>
-							<div class="input-field">
-								<input 
-								data-container="nome"
-								type="text" name="nome" class="form-control" id="nome" required
-									data-validation-required-message="Please enter your name" />
-								<label for="nome" class=""> Nome </label>
-								<p class="help-block"></p>
-
-							</div>
-							<div class="input-field">
-								<input 
-								data-container="email" type="email" class="form-control" id="email" required
-									name="email"
-									data-validation-required-message="Please enter your email" />
-								<label for="email" class=""> Email </label>
-							</div>
-							<div class="input-field">
-								<input data-container="tel" type="number" class="form-control" id="tel" required
-									name="tel"
-									data-validation-required-message="Please enter your email" />
-								<label for="tel" class=""> Telefone </label>
-							</div>
-
-							<div class="input-field">
-								<textarea 
-								data-container="mensagem"
-								id="mensagem" name="mensagem"
-								rows="5" cols="100" required class="form-control materialize-textarea"
-									idation-required-message="Please enter your message" minlength="5"
-									data-validation-minlength-message="Min 5 characters" maxlength="999"
-									style="resize:none"></textarea>
-								<label for="mensagem" class=""> Mensagem </label>
-							</div>
-
-							<div class="input-field">
-								<fieldset style="padding-bottom: 25px;">
-									<div class="custom-file">
-										<input name="file" type="file" class="custom-file-input" id="file">
-										<!-- <label class="custom-file-label" for="customFile"></label> -->
-									</div>
-								</fieldset>
-							</div>
-
-							<div id="success"> </div> <!-- For success/fail messages -->
-
-							<button type="submit"
-								name="BTEnvia" id="BTEnvia"								
-								class="btn btn-primary waves-effect waves-dark pull-right">Enviar</button><br />
-						</form>
-					</div>
-					<div class="col-md-6">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.1591617046697!2d-48.251091550034715!3d-18.880019011327743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44505fcf7dccf%3A0x1198bba59b363f35!2sOpenMaker4.0!5e0!3m2!1sen!2sbr!4v1589839116160!5m2!1sen!2sbr"
-							width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
-							aria-hidden="false" tabindex="0"></iframe>
-					</div>
-				</div>
-			</div>
-
-		</section>
-
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="widget">
-							<h5 class="widgetheading">Nosso contato</h5>
-							<address>
-								<strong>OpenMaker4.0</strong><br>
-								Av. Floriano Peixoto, 5505,
-								Granja Marileusa
-								Uberlândia - MG
-							</address>
-							<p>								
-								<i class="icon-envelope-alt"></i>openmaker4.0@gmail.com
-							</p>
-						</div>
-					</div>
-					<!-- <div class="col-sm-3">
-					<div class="widget">
-						<h5 class="widgetheading">lI</h5>
-						<ul class="link-list">
-							<li><a class="waves-effect waves-dark" href="#">Latest Events</a></li>
-							<li><a class="waves-effect waves-dark" href="#">Terms and conditions</a></li>
-							<li><a class="waves-effect waves-dark" href="#">Privacy policy</a></li>
-							<li><a class="waves-effect waves-dark" href="#">Career</a></li>
-							<li><a class="waves-effect waves-dark" href="#">Contact us</a></li>
-						</ul>
-					</div>
-				</div> -->
-					<div class="col-sm-3">
-						<div class="widget">
-							<h5 class="widgetheading">Útimos posts</h5>
-							<ul class="link-list">
-								<li><a class="waves-effect waves-dark" href="iniciativas/mascara-safe-shield.html">
-										Máscaras Safe Shield</a></li>
-							</ul>
-
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="widget">
-							<h5 class="widgetheading">Novidades</h5>
-							<!-- <ul class="link-list">
-							<li><a class="waves-effect waves-dark" href="#">Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit.</a></li>
-							<li><a class="waves-effect waves-dark" href="#">Pellentesque et pulvinar enim. Quisque
-									at tempor ligula</a></li>
-							<li><a class="waves-effect waves-dark" href="#">Natus error sit voluptatem accusantium
-									doloremque</a></li>
-						</ul> -->
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="sub-footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="copyright">
-								<p>
-									Copyright 2020 © OpenMaker. All rights reserved. <br />
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<ul class="social-network">
-								<li><a class="waves-effect waves-dark" href="#" data-placement="top" title="Facebook"><i
-											class="fa fa-facebook"></i></a></li>
-								<li><a class="waves-effect waves-dark" href="#" data-placement="top" title="Twitter"><i
-											class="fa fa-twitter"></i></a></li>
-								<li><a class="waves-effect waves-dark" href="#" data-placement="top" title="Linkedin"><i
-											class="fa fa-linkedin"></i></a></li>
-								<li><a class="waves-effect waves-dark" href="#" data-placement="top"
-										title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-								<li><a class="waves-effect waves-dark" href="#" data-placement="top"
-										title="Google plus"><i class="fa fa-google-plus"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
-	<!-- javascript
-    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="materialize/js/materialize.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.fancybox.pack.js"></script>
-	<script src="js/jquery.fancybox-media.js"></script>
-	<script src="js/jquery.flexslider.js"></script>
-	<script src="js/animate.js"></script>
-	<!-- Vendor Scripts -->
-	<script src="js/modernizr.custom.js"></script>
-	<script src="js/jquery.isotope.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/animate.js"></script>
-	<script src="js/custom.js"></script>
-	<script src="js/app.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<script src="assets/mail/jqBootstrapValidation.js"></script>
+<script src="assets/mail/contact_me.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
 </body>
-
 </html>
