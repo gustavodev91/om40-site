@@ -1,11 +1,11 @@
 <?php
 
-
 require __DIR__."/../vendor/autoload.php";
 require __DIR__."/../app/src/Mail.php";
 
 
 function sendMsg($nome, $emailEnviado, $tel, $mensagem, $arquivo){
+
     $email = new Mail();
     
     $msg = buildMessage($nome, $emailEnviado, $tel, $mensagem);
@@ -27,6 +27,3 @@ function buildMessage($nome, $emailEnviado, $tel, $mensagem){
 
 
 
-function teste(){
-    echo '123';die;
-}
