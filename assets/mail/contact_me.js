@@ -13,22 +13,26 @@ $(function () {
             var email = $("input#email").val();
             var phone = $("input#phone").val();
             var message = $("textarea#message").val();
+            var file = null;
+            
+            if(document.getElementById('file').files[0]){
+                file = document.getElementById('file').files[0]
+            }
+
+            let formData = new FormData($form[0]);
+
+            
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(" ") >= 0) {
                 firstName = name.split(" ").slice(0, -1).join(" ");
             }
             $this = $("#sendMessageButton");
-            $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
+            //$this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
             $.ajax({
                 url: "/backend/form.php",
                 type: "POST",
-                data: {
-                    nome: name,
-                    tel: phone,
-                    email: email,
-                    mensagem: message,
-                },
+                data: formData,
                 cache: false,
                 success: function () {
                     // Success message

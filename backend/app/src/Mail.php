@@ -4,6 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 class Mail{
+    
     public function send($nome, $email, $tel, $mensagem,$file){
         $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
         
