@@ -1,3 +1,3 @@
-Destaque titulo
-titulo iniciativa 1
-backgroud das iniciativas em branco
+deixar só uma imagem
+começar o texto abaixo do maker preto
+inserir desafio
