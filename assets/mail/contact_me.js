@@ -13,13 +13,13 @@ $(function () {
             var email = $("input#email").val();
             var phone = $("input#phone").val();
             var message = $("textarea#message").val();
-            var file = null;
+            // var file = null;
             
-            if(document.getElementById('file').files[0]){
-                file = document.getElementById('file').files[0]
-            }
+            // if(document.getElementById('file').files[0]){
+            //     file = document.getElementById('file').files[0]
+            // }
 
-            let formData = new FormData($form[0]);
+            // let formData = new FormData($form[0]);
 
             
             var firstName = name; // For Success/Failure Message
@@ -28,11 +28,16 @@ $(function () {
                 firstName = name.split(" ").slice(0, -1).join(" ");
             }
             $this = $("#sendMessageButton");
-            //$this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
+            $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
             $.ajax({
                 url: "/backend/form.php",
                 type: "POST",
-                data: formData,
+                data: {
+                    nome: name,
+                    email: email,
+                    tel : phone,
+                    mensagem : message
+                },
                 cache: false,
                 success: function () {
                     // Success message
