@@ -1,0 +1,15 @@
+version: '2'
+services:
+    php:
+        build:
+            "."
+        image: phpdocker
+        container_name: php
+        restart:
+            always
+        ports:            
+            - 9000:9000            
+        volumes:
+            - "../:/var/www/html/"
+        command: php -S 0.0.0.0:9000 -t /var/www/html/
+            
