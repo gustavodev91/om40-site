@@ -45,11 +45,14 @@ if (isset($_POST)) {
         $msgForm .= 'Existe campos incorretos!';        
         $erroPreenchimento = true;
     }else{
-        if (!sendMsg($nome, $email, $tel, $mensagem, $file)){            
-            $msgForm .= 'Ocorreu um erro ao enviar o formulário!';            
-        }else {
+        $sendEmail = sendMsg($nome, $email, $tel, $mensagem, $file);
+
+        if ($sendEmail === true){
             $msgEnviada = true;
             $msgForm .= 'Sua mensagem foi enviada.';
+        }else {
+            $msgEnviada = false;
+            $msgForm .= $sendEmail;            
         }        
     }
 

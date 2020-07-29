@@ -1,2 +1,2 @@
-FROM php:7.1.28-fpm
+FROM php:7.3-apache
 COPY aplicacao-php.ini /usr/local/etc/php/php.ini

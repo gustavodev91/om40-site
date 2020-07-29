@@ -32,13 +32,13 @@ class Mail{
             //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
             if($file)
-                $mail->addAttachment($file['tmp_name'],$file['name']);
+                $mail->addAttachment($file['tmp_name'],$file['name']);                
+            
                 
-
             $mail->send();
             return true;
-        } catch (Exception $e) {            
-            return false;        
+        } catch (Exception $e) {                    
+            return $e->getMessage();        
         }
     }
 }

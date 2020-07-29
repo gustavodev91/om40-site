@@ -8,6 +8,8 @@ services:
         restart:
             always
         ports:            
-            - 9000:80            
+            - 9000:9000            
         volumes:
-            - "../:/var/www/html/"            
+            - "../:/var/www/html/"
+        command: php -S 0.0.0.0:9000 -t /var/www/openmaker/
+            
