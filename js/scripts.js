@@ -61,3 +61,9 @@ $(document).on('hidden.bs.modal', function (event) {
       $('body').addClass('modal-open');
     }
   });
+
+
+
+  function clickAncora() {
+    document.getElementById('formulario').scrollIntoView();
+  }
