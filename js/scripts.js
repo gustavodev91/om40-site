@@ -63,6 +63,9 @@ $(document).on('hidden.bs.modal', function (event) {
   });
 
 
+  function redirecionar(param){
+    window.location.href = param;
+  }
 
   function clickAncora() {
     document.getElementById('formulario').scrollIntoView();
