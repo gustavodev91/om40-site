@@ -10576,9 +10576,22 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .destaque:hover{
   text-shadow: 1px 1px;
-  background-color: #e9ecef;
-  transition: 1.5s;
+  background-color: #dae1e8 !important;
+  transition: 1s;
   cursor: pointer;
+}
+
+.destaque-blink{
+  animation: blinkingBackground 1s infinite;
+}
+
+@keyframes blinkingBackground{
+  0%		{ background-color: #fff;}
+  25%		{ background-color: #f5f8fb;}
+  50%		{ background-color: #dae1e8;}
+  75%		{ background-color: #f5f8fb;}
+  100%	{ background-color: #fff;}
+  
 }
 
 
@@ -10588,7 +10601,7 @@ header.masthead2 {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");  
+  background-image: url("../assets/img/header/opemmaker-landing.jpg");  
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
