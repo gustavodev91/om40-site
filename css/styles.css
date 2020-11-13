@@ -10669,12 +10669,12 @@ header.masthead2 .masthead2-heading {
   padding-top: 17px;
 }
 
-.card-novo-banner{
+.card-novo-banner{  
   border: 1px solid #56BCE3;
   border-radius: 14%;
   font-size: 21px;    
-  margin-bottom: 23px;
-  height: 163px;
+  margin-bottom: 23px;  
+  height: auto;
 }
 
 .numeros-novo-banner{
