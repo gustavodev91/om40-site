@@ -76,6 +76,7 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
+    parar = true;
     showSlides(slideIndex += n);
 }
 
@@ -99,4 +100,14 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
-setInterval(() => plusSlides(1), 3000)
+
+var parar = false;
+
+if(parar == false){
+    setInterval(rodarSlide, 3000)
+}
+function rodarSlide(){
+    if(!parar){
+        plusSlides(1)
+    }
+}
